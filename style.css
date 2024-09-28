@@ -1,95 +1,75 @@
-.div1{
+
+/* Estilo global */
+body {
+    background-color: #8a939c; /* Color de fondo claro */
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    color: #333; /* Color del texto */
+}
+
+/* Encabezados */
+h1 {
+    color: #007bff; /* Color azul para los encabezados */
+    text-shadow: 1px 1px 2px rgba(91, 5, 94, 0.884); /* Sombra sutil para los encabezados */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #007bff; /* Color azul para los botones */
+    border-color: #007bff; /* Color de borde para los botones */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    border-color: #0056b3; /* Color de borde más oscuro */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Color rojo para eliminar */
+    border-color: #dc3545; /* Color de borde rojo */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Color más oscuro al pasar el mouse */
+    border-color: #bd2130; /* Color de borde más oscuro */
+}
+
+/* Modales */
+.modal-content {
+    background-color: #ffffff; /* Fondo blanco para el contenido del modal */
+    border-radius: 8px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el modal */
+}
+
+/* Tarjetas */
+.card {
+    border: 1px solid #e0e0e0; /* Borde gris claro para las tarjetas */
+    border-radius: 8px; /* Esquinas redondeadas */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(102, 9, 105, 0.87); /* Sombra más intensa al pasar el mouse */
+}
+
+/* Selects */
+.form-select {
+    border-radius: 4px; /* Esquinas ligeramente redondeadas para selects */
+    border: 1px solid #ced4da; /* Borde gris claro */
+}
+
+.form-select:focus {
+    border-color: #007bff; /* Color azul al enfocar el select */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Sombra azul clara al enfocar */
+}
+
+/* Estilo para la lista de categorías */
+#categorias {
     display: flex;
-    align-items: center;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px;
-    background-color: #76ABAE;
-    width: 1200px;
-    border-radius: 50px;
-    padding: 20px;
-}
-.imagen{
-    width: 200px;
-    height: 200px;
-}
-.instagram{
-    width: 30px;
-    height: 30px;
-}
-body{
-    background-color: #222831;
+    flex-wrap: wrap; /* Permitir que las tarjetas se ajusten */
+    justify-content: flex-start; /* Alinear a la izquierda */
 }
 
-/* Estilos para contenedores de habilidades y lenguajes */
-.skills-languages-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #393E46;
-    width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 20px;
-    color: #EEEEEE;
-}
-
-/* Contenedor de habilidades y lenguajes */
-.skills-container, .languages-container {
-    width: 45%;
-    background-color: #222831;
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-}
-
-.skills-container h2, .languages-container h2 {
-    color: #FFD369;
-}
-
-/* Listas de habilidades y lenguajes */
-.skills-container ul, .languages-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills-container li, .languages-container li {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-/* Estilo para los iconos */
-.icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
-
-/* Contenedor de educación */
-.education-container {
-    background-color: #393E46;
-    width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    border-radius: 20px;
-    color: #EEEEEE;
-    text-align: center;
-}
-
-.education-container h2 {
-    color: #FFD369;
-}
-
-/* Lista de educación */
-.education-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.education-container li {
-    margin: 10px 0;
-    font-size: 18px;
+.card-title {
+    font-weight: bold; /* Negrita para los títulos de las tarjetas */
 }
